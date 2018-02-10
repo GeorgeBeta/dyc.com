@@ -1,0 +1,357 @@
+/* Correspondiente al skin -> Depositos   */
+/*========================================*/
+@font-face {
+font-family: 'TitilliumText22LBold';
+ src: url('Fonts/TitilliumText22L005-webfont.eot');
+
+    src: url('Fonts/TitilliumText22L005-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('Fonts/TitilliumText22L005-webfont.ttf') format('truetype'),
+
+         url('Fonts/TitilliumText22L005-webfont.woff') format('woff'),
+
+	 url('Fonts/TitilliumText22L005-webfont.svg#TitilliumText22LBold') format('svg');
+     
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* general page settings */
+html {background: #ffffff none; height: 100%;min-width: 960px; width: 100%;}
+html * { outline-style: none; outline-width: 0px;}
+body, form, #Form {min-width: 960px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none 0px;}
+body, #Body {background: #ffffff none; color: #333333;}
+div.clearBoth, .clearBoth {clear: both; height: 0px; font-size: 0px; padding: 0px; margin: 0px; border: none 0px;}
+.PageMaster {background: #ffffff none; text-align: center; /* width: 100%; height: 100%; min-height: 100%;*/ padding: 0px; margin: 0px auto;}
+
+/* SkinMaster controls the width of the header, content, and footer areas */
+.SkinWidth {width: 960px; margin: 0px auto; padding: 0px; border: none 0px; background: Transparent none; text-align: center; overflow: visible; display: block;}
+
+.ControlPanel {width: 960px; border: none 0px; margin: 0px auto; padding: 0px; text-align: center; background: Transparent none;}
+table.ControlPanel {width: 960px; margin: 0px auto; padding: 0px; border: solid 2px #333333; background: #ffffff none; text-align: center;}
+table.ControlPanel td {text-align: center; vertical-align: middle;}
+
+/* logo and menu areas */
+.BorderTop {margin: 0; padding: 0; height: 10px; min-width: 960px; width: 100%; background: #ffffff none; text-align: center;}
+.BorderStripes {margin: 0 auto; padding: 0; height: 10px; width: 960px; background: #4f82a5 url('BorderStripes.jpg') repeat-y scroll left top; text-align: center;}
+.LogoBg {margin: 0; padding: 0; background: #ffffff none; color: #333333; text-align: center; min-width: 960px; width: 100%;}
+/* logo area */
+.LogoArea {padding: 15px 0px 15px 15px; margin: 0px; border: 0px; background: Transparent none; float: left; display: block; vertical-align: middle;}
+.LogoArea a {padding: 0px; margin: 0px; display: block; vertical-align: middle;}
+.LogoArea img {vertical-align: middle; text-align: left; margin: 0px; padding: 0px;}
+
+.PortalName a:visited,
+.PortalName a:link,
+.PortalName a:active,
+.PortalName {font-family: Arial, Verdana, Sans-Serif; font-size: 30px; color: #84a9c4; padding: 0px; margin: 0px; text-decoration: none; border: 0px;}
+.PortalName a:hover {color: #4e9447; text-decoration: none; border: 0px;}
+
+/* register and login styles */
+.LoginArea {white-space: nowrap; vertical-align: middle; text-align: right; padding: 5px 0 0 0; height: 24px; line-height: 24px; margin: 0px auto; border: none 0px; float: right; clear: none;}
+.RegisterUser {white-space: nowrap; vertical-align: top; padding-left: 16px; height: 14px; font-size: 12px; font-family: Arial, Tahoma, Sans-Serif; display: inline-block;}
+.LoginUser {white-space: nowrap; vertical-align: top; padding-left: 16px; height: 14px; font-size: 12px; font-family: Arial, Tahoma, Sans-Serif; display: inline-block;}
+.ViewCart {white-space: nowrap; vertical-align: top; padding-left: 23px; height: 14px; font-size: 12px; font-family: Arial, Tahoma, Sans-Serif; display: inline-block;}
+.Wish_Link {white-space: nowrap; vertical-align: top; padding-left: 16px; height: 14px; font-size: 12px; font-family: Arial, Tahoma, Sans-Serif; display: inline-block;}
+.Account_Link {white-space: nowrap; vertical-align: top; padding-left: 16px; height: 14px; font-size: 12px; font-family: Arial, Tahoma, Sans-Serif; display: inline-block;}
+a.LoginUser:link,
+a.LoginUser:active,
+a.LoginUser:visited {background: Transparent url('Login.gif') no-repeat scroll left top; color: #64b15d; text-decoration: none; height: 14px; display: inline-block; line-height: 14px;}
+a.RegisterUser:link,
+a.RegisterUser:active,
+a.RegisterUser:visited {background:  Transparent url('Register.gif') no-repeat scroll left top; color: #64b15d; text-decoration: none; height: 14px; display: inline-block; line-height: 14px;}
+a.ViewCart:link,
+a.ViewCart:active,
+a.ViewCart:visited {background:  Transparent url('CATcart2.gif') no-repeat scroll left top; color: #64b15d; text-decoration: none; height: 14px; display: inline-block; line-height: 14px;}
+a.Wish_Link:link,
+a.Wish_Link:active,
+a.Wish_Link:visited {background:  Transparent url('PreferidosNormal.gif') no-repeat scroll left top; color: #64b15d; text-decoration: none; height: 14px; display: inline-block; line-height: 14px;}
+a.Account_Link:link,
+a.Account_Link:active,
+a.Account_Link:visited {background:  Transparent url('TusPedidosNormal.gif') no-repeat scroll left top; color: #64b15d; text-decoration: none; height: 14px; display: inline-block; line-height: 14px;}
+
+a.LoginUser:hover {background: Transparent url('Logout.gif') no-repeat scroll left top; color: #3b7136; text-decoration: none; white-space: nowrap; height: 14px; display: inline-block; line-height: 14px;}
+a.RegisterUser:hover {background: Transparent url('RegisterH.gif') no-repeat scroll left top; color: #3b7136; text-decoration: none; white-space: nowrap; height: 14px; display: inline-block; line-height: 14px;}
+a.ViewCart:hover { color: #3b7136; text-decoration: none; white-space: nowrap; height: 14px; display: inline-block; line-height: 14px;}
+a.Wish_Link:hover {background: Transparent url('PreferidosHover.gif') no-repeat scroll left top; color: #3b7136; text-decoration: none; white-space: nowrap; height: 14px; display: inline-block; line-height: 14px;}
+a.Account_Link:hover {background: Transparent url('TusPedidosHover.gif') no-repeat scroll left top; color: #3b7136; text-decoration: none; white-space: nowrap; height: 14px; display: inline-block; line-height: 14px;}
+
+.TaglineArea {float: right; clear: right; width: 300px; margin: 0; padding: 20px 0 5px 0; text-align: right;}
+.TaglinePane {text-align: right; margin: 0; padding: 0; width: 300px;}
+.TaglinePane .Normal {color: #64b15d; font-style: italic; font-weight: bold; font-size: 12px; font-family: Arial, Tahoma, Sans-Serif;}
+
+/* menu wrapper and area */
+.MenuArea {background: #ffffff none; min-width: 960px; width: 100%; height: 25px; text-align: center; overflow: visible; margin: 0; padding: 0;}
+.MenuFloat {float: left; text-align: left;}
+
+/* styles for LANGUAGE skinobject */
+.LanguageArea { margin: 0px; padding: 5px 0px 0px 0px; border: none 0px; vertical-align: middle; text-align: left; white-space: nowrap; float: right; clear: right;}
+.Language {vertical-align: middle; white-space: nowrap;}
+.Language img {border: 0px; padding: 0px 1px 0px 2px; margin: 0px; white-space: nowrap; display: inline;}
+
+/* content wrapper and area */
+.ContentArea {background: #ffffff none; min-width: 960px; width: 100%; text-align: center; margin: 0; padding: 5px 0 0 0;}
+
+/* content panes */
+.ImagePane {background-color: Transparent; padding: 0px; margin: 0 auto; border: 0px; text-align: center;}
+
+.ContentPaneArea{background: Transparent none; padding: 10px 10px; margin: 0px; border: none; vertical-align: top; text-align: left; overflow: visible;}
+.LeftPane {width: 250px; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+.ContentPane {width: 100%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+.RightPane {width: 250px; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+
+.FullPane {width: 100%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+
+.LeftHalfPane {width: 50%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+.RightHalfPane {width: 50%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+
+.LeftWidePane {width: 67%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+.RightNarrowPane {width: 33%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+.LeftNarrowPane {width: 33%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+.RightWidePane {width: 67%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+.MiddleNarrowPane {width: 34%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+
+.BottomPane {width: 100%; background-color: Transparent; padding: 0px 10px; margin: 0px; border: 0px; vertical-align: top; text-align: left;}
+
+.paneOutline {border: solid 1px #333333;}
+.paneOutline .SubHead {color: #333333; font-size: 16px;}
+
+/* breadcrumb wrapper and area */
+.BreadcrumbArea { background: Transparent none; padding: 5px 10px; margin: 0px; vertical-align: top; text-align: left; white-space: nowrap; float: left; clear: none;}
+.Breadcrumb {font-family: Arial, Tahoma, Sans-Serif; font-size: 11px; font-weight: bold; color: #333333; padding: 0px; margin: 0px; border: 0px;}
+a.Breadcrumb:link,
+a.Breadcrumb:visited,
+a.Breadcrumb:active {color: #4e9447; text-decoration: none;}
+a.Breadcrumb:hover {color: #4e9447; text-decoration: underline;}
+
+/* Fecha */
+.CurrentDateArea { background: Transparent none; padding: 5px 10px; margin: 0px; border: 0px; text-align: right;}
+.current_date {font-family: Arial, Tahoma, Sans-Serif; font-size: 11px; font-weight: bold; color: #333333; padding: 0px; margin: 0px; border: 0px;}
+
+/* Search settings */
+.SearchInputArea {background: Transparent none; padding: 0px 0px 0px 0px; margin: 0px; border: none 0px #9e9983; vertical-align: top; text-align: left; white-space: nowrap; float: right; clear: none;}
+.SearchContent {background: Transparent url('SearchBoxModif.jpg') no-repeat scroll right top; padding: 0px 0 0 5px; margin: 0px; border: none 0px; width: 210px; white-space: nowrap; line-height: 25px; display: block;}
+.SearchSpacer {display: inline;}
+.SearchTop {height: 1px; width: 200px; font-size: 1px; line-height: 1px;}
+.SearchCSS {padding: 0px; margin: 0px; border: 0px; white-space: nowrap; text-align: left; vertical-align: top; color: #76948e; font-size: 12px; line-height: 23px; white-space: nowrap;}
+.SearchCSS img {vertical-align: top; text-align: left; padding: 0px 0px 0px 0px; margin: 0 0 0 0px;}
+#dnn_dnnSEARCH_ClassicSearch {}
+#dnn_dnnSEARCH_txtSearch {background: Transparent none; border: none 0px; font-family: Arial, Tahoma, Sans-Serif; font-size: 12px; vertical-align: top; text-align: left; padding: 0px 0px 0px 15px; margin: 0px 0px 0px 0px; width: 152px; height: 24px; line-height: 24px; white-space: nowrap; color: #333333; overflow: hidden;}
+.SearchInputArea input,
+.SearchInputArea input[type="text"],
+.SearchInputArea input.NormalTextBox
+ {background: Transparent none; border: none 0px;}
+
+/* footer wrapper and area settings */
+.FooterArea {background: #ffffff none; margin: 0; padding: 0; text-align: center; border: none 0px; clear: both; min-width: 960px; width: 100%;}
+.FooterBg {background: #84a9c4 url('BorderStripes.jpg') repeat scroll left top; margin: 0; padding: 0;}
+.FooterTop {background: Transparent url('BorderFooterTop.jpg') no-repeat scroll left top; margin: 0; padding: 0;}
+.FooterLinksArea {text-align: center; margin: 0 210px 0 0; padding: 10px 0;}
+.FooterLinks {color: #333333; font-family: Arial, Tahoma, Sans-Serif; font-size: 11px; font-weight: bold; text-align: center; padding: 0px; margin: 0px; border: 0px; white-space: nowrap;}
+a.FooterLinks:active,
+a.FooterLinks:link,
+a.FooterLinks:visited{color: #333333; text-decoration: none;}
+a.FooterLinks:hover {color: #333333; text-decoration: underline;}
+
+/* copyright and privacy/terms link styles */
+.copyrightArea {white-space: nowrap; background: Transparent none; text-align: center; padding: 0 0 10px 0; margin: 0 210px 0 0;}
+.copyright {color: #ffffff; font-family: Arial, Tahoma, Sans-Serif; font-size: 11px; padding: 0px 0px 0px 0px; margin: 0px; border: none 0px; vertical-align: middle; text-align: center; white-space: normal; font-weight: bold;}
+
+/* general content text styles */
+/*p {margin: 0px; padding: 0px; margin-bottom: 15px;}*/
+p,
+.Normal,
+.NormalDisabled {color: #333333; font-family: Arial, Verdana, Tahoma, Sans-Serif; font-size: 12px; font-weight: normal; line-height: normal;}
+.NormalDisabled {color: Silver;}
+/* text style used for rendered text which requires emphasis */
+.NormalBold {color: #333333; font-family: Arial, Verdana, Tahoma, Sans-Serif; font-size: 12px; font-weight: bold;}
+/* text style used for error messages */
+.NormalRed {font-family: Arial, Verdana, Tahoma, Sans-Serif; font-size: 12px; font-weight: bold; color: #ff0000;}
+/* text style used for textboxes in the admin and edit pages, for Nav compatibility */
+.NormalTextBox {color: #333333; font-family: Arial, Verdana, Tahoma, Sans-Serif; font-size: 12px; font-weight: normal;}
+
+.DNN_HTMLContent .Normal,
+.DNN_HTMLContent p {line-height: 145%;}
+
+.ImagePane p {margin: 0; padding: 0; line-height: normal;}
+
+select, select.NormalTextBox,
+textarea, textarea.NormalTextBox,
+input.NormalTextBox, input[type="text"] {color: #333333; background: #e7eef3 none; border: dotted 1px #333333;}
+
+/* style for normal links */
+a p,
+a:link,
+a:active,
+a:visited {text-decoration: none; color: #4e9447; font-weight: bold;}
+a:hover p,
+a:hover {text-decoration: underline; color: #4e9447; font-weight: bold;}
+
+/* text style used for help text rendered by modules */
+.Help {border: #000000 1px solid; padding: 2px; font-weight: normal; font-size: 11px; color: #000000; font-family: Tahoma, Arial, Helvetica; background-color: #c6d9d6;}
+
+.CommandButton {font-weight: bold; font-size: 11px; color: #4e9447; font-family: Tahoma, Arial, Helvetica; text-decoration: none;}
+.SkinObject {font-weight: bold; font-size: 11px; color: #4e9447; font-family: Tahoma, Arial, Helvetica; text-decoration: none;}
+a.SkinObject:link,
+a.SkinObject:visited,
+a.SkinObject:active,
+a.CommandButton:link,
+a.CommandButton:visited,
+a.CommandButton:active {text-decoration: none; color: #4e9447;}
+a.SkinObject:hover,
+A.CommandButton:hover {text-decoration: underline; color: #4e9447;}
+
+.SearchResultsContent a.CommandButton:link,
+.SearchResultsContent a.CommandButton:visited,
+.SearchResultsContent a.CommandButton:active {text-decoration: none; color: #4e9447;}
+.SearchResultsContent a.CommandButton:hover {text-decoration: underline; color: #4e9447;}
+
+/* style for module titles */
+.Head {font-family: Arial, Helvetica, Tahoma, Sans-Serif; font-size: 20px; font-weight: normal; color: #333333; padding: 0px; margin: 0px 0px 10px 0px;}
+
+/* style of item titles on edit and admin pages */
+.SubHead {font-family: Arial, Tahoma, Sans-Serif; font-size: 11px; font-weight: bold; color: #333333;}
+.SearchResultsContent .SubHead {font-size: 12px;}
+/* module title style used instead of Head for compact rendering by QuickLinks and Signin modules */
+.SubSubHead {font-family: Arial, Tahoma, Sans-Serif; font-size: 11px; font-weight: bold; color: #333333;}
+
+/* button style for standard HTML buttons */
+.StandardButton, input.normal, input[type="button"], input[type="submit"] {padding: 5px; font-weight: bold; font-size: 12px; background: #51634a url('standardbutton_bg.jpg') repeat-x scroll left top; color: #ffffff; font-family: Arial, Tahoma, Sans-Serif; border: ridge 2px #ffffff;}
+
+/* horizontal rules */
+hr {color: #333333; border: none 0px; border-top: 1px dotted #333333; border-bottom: 0px dotted #333333; width: 100%; height: 1px; margin: 3px auto 5px 0; text-align: left; padding: 0px 0 5px 0; background: Transparent none; font-size: 1px;}
+
+/* GENERIC */
+h1 {font-family: Arial, Helvetica, Tahoma, Sans-Serif; font-size: 20px; font-weight: bold; color: #333333; padding: 0px 0px 10px 0px; margin: 0px; line-height: normal;}
+h2 {font-family: Arial, Helvetica, Tahoma, Sans-Serif; font-size: 12px; font-weight: normal; color: #333333; padding: 0px 0px 10px 0px; margin: 0px; line-height: normal;}
+h3 {font-family: Arial, Helvetica, Tahoma, Sans-Serif; font-size: 12px; font-weight: bold; color: #333333; padding: 0px 0px 10px 0px; margin: 0px; line-height: normal;}
+h4 {font-family: Tahoma, Arial, Helvetica; font-size: 12px; font-weight: bold; color: #333333; padding: 0px; margin: 0px; line-height: normal;}
+h5, dt {font-family: Tahoma, Arial, Helvetica; font-size: 11px; font-weight: bold; color: #333333; padding: 0px; margin: 0px; line-height: normal;}
+h6 {font-family: Tahoma, Arial, Helvetica; font-size: 11px; font-weight: bold; color: #333333; padding: 0px; margin: 0px; line-height: normal;}
+li {padding-bottom: 7px;}
+
+/* styles used by Data Grids */
+.DataGrid_Container {background-color: Transparent; padding: 5px; border: none 0px; text-align: center;}
+.DataGrid_Container table {background: #b3cbda none; padding: 5px; border: dotted 1px #555555;}
+.DataGrid_Footer {background-color: #b3cbda;}
+.DataGrid_Header {background-color: Transparent; color: #000000; font-family: Tahoma, Arial, Helvetica; font-size: 10px; font-weight: bold; text-align: center;}
+.DataGrid_Header td {border-bottom: dotted 1px #555555;}
+.DataGrid_Item {background-color: #ffffff; color: #000000; font-family: Tahoma, Arial, Helvetica; font-size: 10px; font-weight: normal; text-align: left;}
+.DataGrid_SelectedItem {background-color: #d6e3eb; color: #000000; font-family: Tahoma, Arial, Helvetica; font-size: 10px; font-weight: normal; text-align: left;}
+.DataGrid_AlternatingItem {background-color: #d6e3eb; color: #000000; font-family: Tahoma, Arial, Helvetica; font-size: 10px; font-weight: normal; text-align: left;}
+
+/* changes to default file manager styles */
+.FileManager {background: #c7e3c4 none; line-height: normal;}
+.FileManager_Header {background: #d6e3eb none;}
+.FileManager_ToolBar {background: Transparent none;}
+.FileManager_Item {background: #ffffff none;}
+.FileManager_AltItem {background: #e7eef3 none;}
+/* to aid in collapse of empty content panes */
+.DNNEmptyPane {width: 0px; margin: 0px; padding: 0px; border: none 0px;}
+/* add a dotted border when there is no banner in image pane */
+.ImagePane.DNNEmptyPane {border-bottom: dotted 0px #999999; width: 960px; height: 7px; background: Transparent url('BorderStripes.jpg') repeat scroll left top;}
+/* ================================
+    CSS STYLES FOR Module Blog
+   ================================
+*/
+
+.blog_body {color: #333333; font-family: Arial, Verdana, Tahoma, Sans-Serif; font-size: 12px; font-weight: normal; line-height: 1.45;}
+.blog_body p {line-height: 1.45;}
+
+.BlogContent .Calendar {font-size: 11px !important;}
+
+.Blog_Archive_Title {background: #4e9447 url('calendar_grad2.jpg') repeat-x scroll left top !important; color: #ffffff !important;}
+.Blog_Archive_NextPrev,
+.Blog_Archive_NextPrev a:link,
+.Blog_Archive_NextPrev a:visited,
+.Blog_Archive_NextPrev a:active,
+.Blog_Archive_NextPrev a:hover  {color: #ffffff !important; text-decoration: none !important; padding: 0px; margin: 0px 5px;}
+
+.Blog_Archive_DayHeader {background: #333333 url('calendar_grad3.jpg') repeat-x scroll left top !important; color: #ffffff !important; vertical-align: middle;}
+.Blog_Archive_TodayDay {background: #4e9447 url('calendar_grad2.jpg') repeat-x scroll left top !important; color: #ffffff !important; font-size: 11px !important; line-height: normal;}
+.Blog_Archive_TodayDay a,
+.Blog_Archive_TodayDay a * {color: #ffffff !important; font-size: 11px !important; line-height: normal;}
+.Blog_Archive_SelectedDay {background: #477594 url('calendar_grad.jpg') repeat-x scroll left top !important; color: #ffffff !important; font-size: 11px !important; line-height: normal;}
+.Blog_Archive_SelectedDay a,
+.Blog_Archive_SelectedDay a * {color: #ffffff !important; font-size: 11px !important; line-height: normal;}
+
+.Blog_Archive_Day,
+.Blog_Archive_WeekendDay,
+.Blog_Archive_OtherMonth {font-size: 11px !important; line-height: normal;}
+
+.blog_published {background: #ffffff none !important; border: solid 1px #4e9447 !important;}
+.blog_pub-month {background: #4e9447 none !important; color: #ffffff !important; padding: 1px 1px 2px 1px;}
+h2.blog_title { background: Transparent none; border: none 0px #9e9983; font-family: Arial, Verdana, Helvetica, Tahoma, Sans-Serif; font-size: 20px; font-weight: normal; padding: 5px 0; margin: 10px 0px; color: #477594; height: 28px; line-height: 28px; vertical-align: middle;}
+h2.blog_title a:link,
+h2.blog_title a:visited,
+h2.blog_title a:active {text-decoration: none; color: #477594; font-weight: normal; line-height: 28px; vertical-align: middle;}
+h2.blog_title a:hover {text-decoration: underline; color: #477594; font-weight: normal; line-height: 28px; vertical-align: middle;}
+.blog_dateline {font-size: 10px; font-family: Arial, Helvetica, Tahoma, Sans-Serif; font-weight: bold; margin: 0px; padding: 0px 0px 7px 0px;}
+.BlogInfo {border-bottom: dotted 1px #477594;}
+
+div.blog_bubble_owner blockquote {background: #dae2e1 none;}
+
+/* preload hover images so there is no lag time first time hovering items like menu, login, register, etc. */
+.PreloadImages, .Invisible {height: 0px; width: 0px; border: 0; margin: 0; padding: 0;}
+
+/* ************      ZONA TUTORIAL    **************** */
+/* Right Hand Links */
+#RightLinks{margin:0;padding:0;}
+#RightLinks li{height:50px;clear:both;list-style-type:none;background:url(images/Horizontal-Sep.jpg) repeat-x left bottom;padding:1em 0;margin:0;}
+#RightLinks li img{float:left;height:50px;width:56px;margin:0 15px 0 0;}
+#RightLinks li a:link, #RightLinks li a:visited{color:#000;text-decoration:none;}
+#RightLinks li a:active, #RightLinks li a:hover{color:#D0171E;text-decoration:none;}
+#RightLinks li p{margin:0;line-height:14px;}
+#RightLinks li p span{display:block;color:#000;font-size:13px;font-weight:bold;text-transform:uppercase;padding:0 0 2px;font-family:TitilliumText22LBold;font-size:14px;text-shadow: #f7f7f7 1px 1px 1px;}
+
+/* Link de Artículos */
+#ItemLinks{margin:0;padding:0;}
+#ItemLinks li{height:23px;clear:both;list-style-type:none;background:url(images/Horizontal-Sep.jpg) repeat-x left bottom;padding:1em 0;margin:0;}
+#ItemLinks li img{float:left;height:50px;width:56px;margin:0 15px 0 0;}
+#ItemLinks li a:link, #RightLinks li a:visited{color:#000;text-decoration:none;}
+#ItemLinks li a:active, #RightLinks li a:hover{color:#D0171E;text-decoration:none;}
+#ItemLinks li p{margin:0;line-height:14px;}
+#itemLinks li p span{display:block;color:#000;font-size:13px;font-weight:bold;text-transform:uppercase;padding:0 0 2px;font-family:TitilliumText22LBold;font-size:14px;text-shadow: #f7f7f7 1px 1px 1px;}
+
+/* ************      FIN DE ZONA TUTORIAL ************ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
