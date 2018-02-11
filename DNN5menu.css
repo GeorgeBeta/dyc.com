@@ -1,0 +1,74 @@
+/*menu for dnn5x only */
+/*
+.m          All Sub Menu                .m      All Sub Menus
+.m[level]   Sub Menu at level x         .m0     First level sub menus
+
+.mid[id]    Sub Menu with id x          .mid39  DNN Admin Sub Menu
+.break      Break                       .break  All menu breaks
+.mi         Menu Item (all)             .mi     All Menu Items
+.id         Menu Item with id x         .id41   Menu Item with id 41
+.mi[path]   Menu Item in specific path  .mi0    First Menu Item (Home)
+                                        .mi1-0  First child of second root menu (Admin-Site Settings)   
+
+.root       Root Menu Item              .root   All root menu items
+.first      First Menu Item             .first  First menu item in each menu
+.last       Last Menu Item              .last   Last menu item in each menu
+                                        .first.last First & Last menu item in each menu
+
+.icn        Icon
+.hov        Hover
+.sel        Selected
+.bc         BreadCrumb
+.txt        Menu Text (coming soon!)
+*/
+
+.mainMenu {font-family: Arial, Helvetica, Sans-Serif; cursor: pointer; font-size: 12px; font-weight: bold; margin: 0px; padding: 0px; vertical-align: middle; overflow: visible;}
+/* root menu items default */
+.mainMenu .root.mi {padding: 0 5px 0 0; background: Transparent none; color: #333333; font-weight: bold; vertical-align: middle; text-align: center; border: none 0px; margin: 0px 0px 0px 0px; height: 25px; line-height: 25px; display: inline-block; white-space: normal;}
+.mainMenu .root .txt {padding: 0px 7px; line-height: 25px; height: 25px; background: Transparent url('img/MenuItemM.jpg') repeat-x scroll left top; display: inline-block; /*float: left; clear: none;*/ white-space: nowrap; color: #333333;}
+/* sub menu */
+.mainMenu .m {border: solid 3px #999999; width: 150px; white-space: nowrap; background: #e7eef3 none; margin: -3px 0px 0px 0px; padding: 0px; z-index: 1000;}
+.mainMenu .m0 {margin-top: 0px;}
+.mainMenu .m .mi * {padding: 2px 0px 2px 0px; font-weight: bold; white-space: nowrap; text-align: left; vertical-align: middle; font-family: Arial, Verdana, Sans-Serif; font-size: 11px; z-index: 1000;}
+.mainMenu .m .mi {height: 21px; background: Transparent none; color: #333333;}
+.mainMenu table.m td {border-bottom: solid 1px #999999; height: 21px; z-index: 1001;}
+.mainMenu table.m .last td {border-bottom: none 1px #999999; height: 21px;}
+.mainMenu .m .mi .txt {padding: 0px 4px 0px 4px; height: 21px; line-height: 21px; white-space: nowrap;}
+
+/* submenu breadcrumb and selected */
+.mainMenu .m .mi.bc,
+.mainMenu .m .mi.sel {background: #84a9c4 none; color: #ffffff;}
+
+/* submenu hover */
+.mainMenu .m .mi.hov {background: #85c27f none; color: #ffffff;}
+
+/* icon settings */
+.mainMenu .root span.icn {display: none;}
+.mainMenu .root .icn img {display: none;}
+.mainMenu .m .mi .icn span {padding: 0px;}
+.mainMenu .m .icn img {vertical-align: middle; padding: 0px; margin: 2px;}
+
+/* separator css */
+.mainMenu .SepLeftCss {padding: 0px 0px; margin: 0px 0px 0px 0px; background: Transparent url('img/MenuItemL.jpg') no-repeat scroll left top; height: 25px; line-height: 25px; width: 12px; display: inline-block; /*float: left; clear: none;*/}
+.mainMenu .SepRightCss {padding: 0px 0px; margin: 0px 0px 0px 0px; background: Transparent url('img/MenuItemR.jpg') no-repeat scroll left top; height: 25px; line-height: 25px; width: 12px; display: inline-block; /*float: left; clear: none;*/}
+
+.mainMenu .bc .SepLeftCss {padding: 0px 0px; margin: 0px 0px 0px 0px; background: Transparent url('img/MenuBcL.jpg') no-repeat scroll right top; height: 25px; line-height: 25px; width: 12px; display: inline-block; /*float: left; clear: none;*/}
+.mainMenu .root.bc .txt {background: Transparent url('img/MenuBcM.jpg') repeat-x scroll left top; color: #ffffff;}
+.mainMenu .bc .SepRightCss {padding: 0px 0px; margin: 0px 0px 0px 0px; background: Transparent url('img/MenuBcR.jpg') no-repeat scroll left top; height: 25px; line-height: 25px; width: 12px; display: inline-block; /*float: left; clear: none;*/}
+
+.mainMenu .hov .SepLeftCss {padding: 0px 0px; margin: 0px 0px 0px 0px; background: Transparent url('img/MenuHoverL.jpg') no-repeat scroll right top; height: 25px; line-height: 25px; width: 12px; display: inline-block; /*float: left; clear: none;*/}
+.mainMenu .root.hov .txt {background: Transparent url('img/MenuHoverM.jpg') repeat-x scroll left top; color: #ffffff;}
+.mainMenu .hov .SepRightCss {padding: 0px 0px; margin: 0px 0px 0px 0px; background: Transparent url('img/MenuHoverR.jpg') no-repeat scroll left top; height: 25px; line-height: 25px; width: 12px; display: inline-block; /*float: left; clear: none;*/}
+
+.mainMenu .m .mi .txt {background: Transparent none;}
+
+
+
+
+
+
+
+
+
+
+
